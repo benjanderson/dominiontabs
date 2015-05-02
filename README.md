@@ -21,3 +21,5 @@ Once the prerequisites exist, just run 'python dominiontabs.py <outfile>' to pro
 
 Feel free to comment on boardgamegeek at <http://boardgamegeek.com/filepage/59848/horizontal-double-sided-dominion-tabs-for-all-expa> or file issues on github (<https://github.com/sumpfork/dominiontabs/issues>).
 
+Bens Script
+C:\Source\Github\dominiontabs>c:\Python27\python.exe dominion_tabs.py --expansions adventures --orientation vertical --size 9.4x6 --order expansion --exclude_events

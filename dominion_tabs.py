@@ -216,7 +216,7 @@ class DominionTabs:
             # don't draw outline on back, in case lines don't line up with
             # front
             if isExpansionDivider and self.options.centre_expansion_dividers:
-                outline = self.expansionTabOutline
+                outoutline = self.expansionTabOutline
             else:
                 outline = self.tabOutline
             self.canvas.lines(outline)
@@ -588,7 +588,7 @@ class DominionTabs:
         descriptions.append(line)
         descriptions = [x.strip() for x in descriptions]
         descriptions = [x for x in descriptions if x]
-        card.description = u'\n'.join(descriptions)
+        card.description = ""#u'\n'.join(descriptions)
 
     def read_card_defs(self, fname, fileobject=None):
         cards = []
@@ -611,8 +611,8 @@ class DominionTabs:
                                    m.groupdict()["cost"],
                                    '',
                                    potcost)
-                self.add_definition_line(
-                    currentCard, m.groupdict()["description"])
+                #self.add_definition_line(
+                #    currentCard, m.groupdict()["description"])
                 cards.append(currentCard)
             elif line:
                 assert currentCard
